@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript" src="myscript.js"></script>
+    <form onsubmit="return validate()">
+    <h1>FORM ĐĂNG KÍ</h1>
+    <h3>Họ <input 
+      type="text" 
+      name="=hoten" 
+      id="familyline" 
+      placeholder="Họ" />
+    </h3>
+    <br />
+    <h3>Tên <input 
+      type="text" 
+      name="=hoten" 
+      id="username" 
+      placeholder="Tên" />
+    </h3>
+    <br />
+    <h3>Ngày Sinh: <br>
+        Ngày <input id="birth" type="number" min="1" max="31">
+        Tháng <input id="month" type="number" min="1" max="12">
+        Năm <input id="year" type="number" min="1">
+    </h3> 
+        <h3>giới tính :
+            <input name="gender" type="radio"> Nam
+            <input name="gender" type="radio"> Nữ
+        </h3>
+    <h3> Số điện thoại: <input type="tel" id="tel"></h3>
+    <h3> Sở thích :
+        <input  name="hobby" type="checkbox"> đọc sách
+        <input  name="hobby" type="checkbox"> xem phim
+        <input  name="hobby" type="checkbox"> nghe nhạc
+        <input  name="hobby" type="checkbox"> đá bóng
+    </h3>
+    <h3>Khác: </h3>
+    <textarea rows="5" cols="50" ></textarea><br>
+<button type="submit" class="submit">Submit</button>
+<button type="submit" class="Reset">Reset</button>
+</form>
+</html>
