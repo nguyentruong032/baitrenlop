@@ -1,0 +1,12 @@
+.contain{
+    width:500px;
+    margin:0 auto;
+    font-family: segoe ui;
+    font-size: 13px;
+    display: flex;
+    padding:2px;
+   
+}
+.cot{
+    padding-left:5px;
+}
