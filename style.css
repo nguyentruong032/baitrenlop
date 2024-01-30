@@ -52,7 +52,7 @@ nav .wrapper {
   top: 85px;
   line-height: 45px;
   opacity: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
   margin-top: 33.5px;
   border-radius: 10px;
 }
