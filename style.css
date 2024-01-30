@@ -69,12 +69,11 @@ nav .wrapper {
   visibility: visible;
   transition: 0.5s;
 }
+.goback {
+  width: 100px;
+  height: 50px;
+}
 .goback button {
-  position: relative;
-  margin-top: 50px;
-  text-align: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
   background-color: bisque;
+  position: absolute;
 }
