@@ -3,42 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Form Validate</title>
   </head>
   <body>
-    <div id="container">
-      <p>the paragraph 1</p>
-    </div>
-    <script src="add_node.js"></script>
-    <hr />
-    <div id="bo"></div>
-    <button onclick="addnode_img();">add image</button>
-    <hr />
-    <div id="container1">
-      <p id="p1">the first paragraph</p>
-      <p id="p2">the second paragraph</p>
-    </div>
-    <button onclick="addnode()">add node</button>
-    <hr />
-    <div id="container2">
-      <p id="p3">the first paragraph</p>
-      <p id="p4">the second paragraph</p>
-      <button onclick="changenode()">change node</button>
-    </div>
-    <hr />
-    <div>
-      <p id="p5">p1. This is a paragraph.</p>
-      <p id="p6">p2. This is another paragraph.</p>
-      <button onclick="remove_node1('p5')">remove node</button>
-    </div>
-    <div id="container3">
-      <p id="p7">p1.This is p3 paragraph</p>
-      <p id="p8">p2.This is p4 paragraph</p>
-      <button onclick="remove_node2('container3','p8')">remove node</button>
-    </div>
-    <hr />
-    <div id="container3">
-      <h1 id="heading1">Xin chào CNTT 2021</h1>
-    </div>
+    <form id="myForm" onsubmit="return validateForm()">
+      <label for="fullName">Họ và tên:</label>
+      <input type="text" id="fullName" name="fullName" />
+      <br />
+
+      <label for="phoneNumber">Số điện thoại:</label>
+      <input
+        type="tel"
+        id="phoneNumber"
+        name="phoneNumber"
+        pattern="[0-9]{10}"
+      />
+      <small>Định dạng: 10 số</small>
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function validateForm() {
+        var x = document.getElementById("fullName").value;
+        var y = document.getElementById("phoneNumber").value;
+        var z = document.getElementById("email").value;
+
+        // Kiểm tra họ tên không được để trống
+        if (x.trim() === "") {
+          alert("Vui lòng nhập họ và tên.");
+          return false;
+        }
+
+        // Kiểm tra số điện thoại theo định dạng
+        var phoneNumberRegex = /^[0-9]{10}$/;
+        if (!phoneNumberRegex.test(y)) {
+          alert("Vui lòng nhập số điện thoại hợp lệ (10 số).");
+          return false;
+        }
+
+        // Kiểm tra email theo định dạng
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(z)) {
+          alert("Vui lòng nhập email hợp lệ.");
+          return false;
+        }
+
+        // Nếu thông tin hợp lệ, có thể thực hiện các xử lý khác ở đây
+
+        alert("Dữ liệu đã được gửi thành công!");
+        return true;
+      }
+    </script>
   </body>
 </html>
