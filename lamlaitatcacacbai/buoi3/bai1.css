@@ -1,0 +1,251 @@
+.header {
+  background-image: url(https://lh3.googleusercontent.com/2OrUzHCRSI-V46Z1qJBh90usG6OkKwCbXN80FbrjkWoQz4VfoJjNAoQHLHPQRZWH7dI_m5I1gi48h6xMJ5pK6kkdXmUnXPe4VqwvEdo4QeWRjLV9Oew=w2400-rj);
+  border-radius: 15px;
+  border: 2px solid;
+  height: 500px;
+  background-color: azure;
+  background-size: cover;
+}
+
+.header__box {
+  text-align: center;
+
+  padding: 56px;
+}
+
+.header__title {
+  color: #323232;
+}
+.header__title-name {
+  text-align: center;
+  font-weight: 200;
+  font-size: 88px;
+  font-family: sans-serif;
+  margin-bottom: 8px;
+}
+
+.header__title-text {
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+.header__button {
+}
+
+.header__link {
+  background-color: #0b57d0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.header__link:hover {
+  opacity: 0.8;
+}
+
+.body {
+  width: 100%;
+  max-width: 100%;
+}
+
+.body1 {
+  margin: 80px 0;
+}
+
+.body1__title {
+  font-size: 45px;
+  font-family: sans-serif;
+  margin: 0 0 8px;
+  font-weight: 300;
+  position: relative;
+  left: 110px;
+}
+.body1__item {
+  margin: 5px;
+}
+
+.body1__item-card {
+  width: 400px;
+  height: 350px;
+  background-color: #f8fafd;
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  position: relative;
+  left: 110px;
+  margin-left: 10px;
+}
+
+.body1__item-card:hover {
+  background-color: #68abe1;
+}
+
+.body1__item-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+.body1__item-card-info {
+  color: #323232;
+  font-family: sans-serif;
+  padding: 10px;
+  margin-left: 0;
+}
+.body1__item-card-info-name {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.body1__item-card-info-text {
+  font-size: 16px;
+}
+
+.body2 {
+  margin-top: 180px;
+  padding-top: 300px;
+}
+.body2__title {
+  font-size: 45px;
+  font-family: sans-serif;
+  margin: 0 0 8px;
+  font-weight: 300;
+  position: relative;
+  left: 110px;
+  color: red;
+}
+.body2__item {
+  margin: 5px;
+}
+.body2__item-card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+.body2__item-card-info {
+  color: #323232;
+  font-family: sans-serif;
+  padding: 10px;
+  margin-left: 0;
+}
+.body2__item-card-info-name {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.body2__item-card-info-text {
+  font-size: 16px;
+}
+.body2__item-card {
+  width: 400px;
+  height: 350px;
+  background-color: #f8fafd;
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  position: relative;
+  left: 110px;
+  margin-left: 10px;
+}
+
+.body2__item-card::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.body3 {
+  padding: 300px;
+  margin-left: 0;
+}
+
+.body3__title {
+  font-size: 45px;
+  font-family: sans-serif;
+  margin: 0 0 8px;
+  color: #1f1f1f;
+}
+
+.body3__item {
+  float: left;
+  width: 600px;
+  height: 120px;
+  margin-left: 10px;
+}
+.body3__item-box {
+  background: #f8fafd;
+  border-radius: 15px;
+  border: 1px solid;
+  margin-right: 10px;
+  display: flex;
+}
+
+.body3__item-box-info {
+  margin: 24px;
+  color: #1f1f1f;
+  font-family: sans-serif;
+  padding-right: 120px;
+  float: left;
+}
+.body3__item-box-title {
+  color: #1f1f1f;
+  font-size: 24px;
+  margin: 0 56px 0 0;
+}
+.body3__item-box-text {
+  font-size: 16px;
+  color: #1f1f1f;
+}
+
+.body4 {
+  margin-top: 80px 0 0;
+  padding-top: 700px;
+}
+.body4__title {
+  font-size: 45px;
+  font-family: sans-serif;
+  margin: 0 0 8px;
+  font-weight: 300;
+  position: relative;
+  left: 111px;
+  color: #1f1f1f;
+}
+.body4__item {
+  background-color: whitesmoke;
+}
+.body4__item-card-info {
+  margin: 25px;
+}
+.body4__item-card-info-name {
+  font-size: 24px;
+}
+.body4__item-card-info-text {
+  font-size: 16px;
+}
+.body4__item-card {
+  width: 600px;
+  height: 100px;
+  background-color: #f8fafd;
+  float: left;
+  list-style-type: none;
+  text-decoration: none;
+  position: relative;
+  left: 110px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.goback {
+  width: 100px;
+}
+.goback button {
+  background-color: bisque;
+  position: absolute;
+}

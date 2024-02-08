@@ -51,3 +51,14 @@
   width: 20%;
   text-align: justify;
 }
+#backToTopBtn {
+  position: fixed;
+  bottom: 3%;
+  transform: translateX(150vh);
+  width: auto;
+  height: auto;
+  background-color: #ffffff;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}
