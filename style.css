@@ -15,7 +15,6 @@ nav {
 }
 nav .wrapper {
   max-width: 1250px;
-  /* padding: 0 30px; */
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -32,6 +31,7 @@ nav .wrapper {
 .nav-links li {
   list-style-type: none;
 }
+/* self-works */
 .nav-links li a {
   color: white;
   text-decoration: none;
@@ -39,7 +39,7 @@ nav .wrapper {
   font-weight: 500;
   padding: 9px 15px;
   border-radius: 5px;
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
 }
 .nav-links li a:hover {
   background-color: #242526;
@@ -51,7 +51,6 @@ nav .wrapper {
   top: 85px;
   line-height: 45px;
   opacity: 0;
-  /* visibility: hidden; */
   margin-top: 33.5px;
   border-radius: 10px;
 }
@@ -65,32 +64,15 @@ nav .wrapper {
 .nav-links li:hover .drop-menu {
   top: 65px;
   opacity: 1;
-  visibility: visible;
   transition: 0.5s;
 }
-.goback {
-  width: 100px;
-}
-.goback button {
-  background-color: bisque;
-  position: absolute;
-}
-#backToTopBtn {
-  position: fixed;
-  bottom: 10%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: #2c4b83;
-  color: white;
-}
+
 @media (max-width: 796px) {
   nav .wrapper {
     max-width: 1250px;
-
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .wrapper .logo a {
     color: white;
@@ -106,5 +88,50 @@ nav .wrapper {
     padding: 1px 3px;
     border-radius: 5px;
     transition: 0.5s ease-in-out;
+  }
+}
+/* gobackbtn */
+.goback {
+  width: 100px;
+}
+.goback button {
+  background-color: bisque;
+  position: absolute;
+}
+/* certificate */
+.certificate {
+  display: flex;
+  float: left;
+}
+.certificate_1 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  list-style: none;
+}
+.certificate .certificate_1 img {
+  width: 70%;
+  margin-top: 50px;
+}
+.certificate .certificate_1:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  color: aquamarine;
+}
+@media (max-width: 796px) {
+  .certificate {
+    display: flex;
+    flex-direction: column;
+  }
+  .certificate_1 {
+    margin-top: 0px;
+    margin-bottom: -43px;
+    font-size: 20px;
+  }
+  .certificate_1 img {
+    margin-bottom: -31px;
   }
 }
